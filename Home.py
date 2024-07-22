@@ -140,19 +140,19 @@ with st.container():
         
     with cl2:
         st.markdown('Países Cadastrados')
-        st.markdown(f'## {df2['countries'].nunique()}')
+        st.markdown(f'## {df2["countries"].nunique()}')
         
     with cl3:
         st.markdown('Cidades Cadastradas')
-        st.markdown(f'## {df2['city'].nunique()}')
+        st.markdown(f'## {df2["city"].nunique()}')
         
     with cl4:
         st.markdown('Avaliações Feitas na Plataforma')
-        st.markdown(f'## {df2['votes'].sum()}')
+        st.markdown(f'## {df2["votes"].sum()}')
         
     with cl5:
         st.markdown('Tipos de Culinárias Oferecidas')
-        st.markdown(f'## {df2['cuisines'].nunique()}')
+        st.markdown(f'## {df2["cuisines"].nunique()}')
 
 
 with st.container():
