@@ -136,7 +136,7 @@ with st.container():
     cl1, cl2, cl3, cl4, cl5 = st.columns(5)
     with cl1:
         st.markdown('Restaurantes Cadastrados')
-        st.markdown(f'## {df2['restaurant_id'].nunique()}')
+        st.markdown(f'## {df2["restaurant_id"].nunique()}')
         
     with cl2:
         st.markdown('Países Cadastrados')
