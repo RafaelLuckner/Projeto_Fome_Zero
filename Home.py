@@ -120,12 +120,9 @@ st.markdown(
     """
 )
 
-paises_var = st.sidebar.checkbox('Todos Países', value=False)
-if paises_var == True:
-    paises_op = df1['countries'].unique()
-else:
-    paises = df1['countries'].unique()
-    paises_op = st.sidebar.multiselect('Selecione os Países',paises)
+
+paises = df1['countries'].unique()
+paises_op = st.sidebar.multiselect('Selecione os Países',paises)
 
 df2=df1
 ##########Filtro########
