@@ -164,7 +164,6 @@ with st.container():
                                                                                                 .sort_values(by='restaurant_id',ascending = False)
                                                                                                 .reset_index(drop=True))
             rest_cid.columns = ['Paises', 'Cidades', 'Restauranres']
-            rest_cid = rest_cid.loc[rest_cid['Restauranres']>=5,:]
             rest_cid = rest_cid.iloc[0:8,:].sort_values(by='Restauranres', ascending=False)
             
             st.plotly_chart(px.bar(rest_cid,x='Cidades',y='Restauranres',color='Paises'))
