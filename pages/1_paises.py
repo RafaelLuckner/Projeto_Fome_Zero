@@ -132,7 +132,7 @@ df1 = df1.loc[df1['countries'].isin(paises_selec),:]
 
 
 with st.container(border=True):
-    st.markdown('## Restaurantes registrados por restaurantes em cada País')
+    st.markdown('## Restaurantes registrados por País')
     dfa = df1[['countries','restaurant_id']].groupby('countries').nunique().reset_index().sort_values(by='restaurant_id',
                                                                                                       ascending = False)
     dfa.columns = ['País', 'Restaurantes']
@@ -149,7 +149,7 @@ with st.container():
     col1, col2 = st.columns(2)
     with col1:
         with st.container( border=True):
-            st.markdown('### Média de avaliações por País')
+            st.markdown('### Média de avaliações por Restaurantes em cada País')
             dfa = (df1[['countries','votes']].groupby('countries').
                                                 mean().
                                                 reset_index().
