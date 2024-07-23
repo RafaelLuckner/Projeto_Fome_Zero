@@ -98,7 +98,7 @@ df1 = df1.drop(columns = ['rating_color'])
 df1["cuisines"] = df1.loc[:, "cuisines"].astype(str)
 df1["cuisines"] = df1.loc[:, "cuisines"].apply(lambda x: x.split(",")[0])
 
-st.markdown('# Visão Paises')
+st.markdown('# Visão Cidades')
 # Barra lateral 
 
 image = Image.open('logo.png')
@@ -133,6 +133,7 @@ df1 = df1.loc[df1['countries'].isin(paises_selec),:]
 
 
 with st.container(border=True):
+    st.markdown('## Top 10 Cidades com mais Restaurantes')
     rest_cid = df1[['city','restaurant_id']].groupby('city').nunique().reset_index().sort_values(by='restaurant_id',ascending = False)   
     cid = rest_cid.iloc[0:10,:].reset_index(drop=True)
     cid.columns = ['Cidades', 'Restaurantes']
