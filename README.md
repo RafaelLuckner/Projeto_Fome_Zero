@@ -28,13 +28,12 @@ Durante o desenvolvimento do projeto minha principal tarefa foi trabalhar como C
 3. As 10 melhores culinárias.
 4. As 10 piores culinárias 
 
-O objetivo deste projeto é criar um conjunto de gráficos e/ou tabelas que exibam essas métricas para a melhor visualização e interação possível.
 
 # 2- Premissas assumidas para a análise
 
 1. Marketplace foi o modelo de negócio assumido.
-2.  Melhores restaurantes são aqueles que possuem a melhor média de avaliação e o id mais recente.
-3.  As principais visões do negócio foram: Visão países, visão cidades e visão culinárias.
+2. Melhores restaurantes são aqueles que possuem a melhor média de avaliação e o id mais recente.
+3. As principais visões do negócio foram: Visão países, visão cidades e visão culinárias.
 
 # 3- Top 3 Insights de dados
 
@@ -46,7 +45,7 @@ O objetivo deste projeto é criar um conjunto de gráficos e/ou tabelas que exib
 
 Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
 
-O painel pode ser acessado através desse link: https://meuprojetofomezero.streamlit.app/
+O painel pode ser acessado através deste link: https://meuprojetofomezero.streamlit.app/
 
 # 5- Conclusão
 
@@ -56,6 +55,6 @@ Da visão países, podemos concluir que à uma necessidade de aumentar a quantid
 
 # 6- Proximo passo
 
-1. Selecionar e substituir as métricas para acompanhar aquelas mais relevantes para o negócio
+1. Selecionar e substituir as métricas para acompanhar aquelas mais relevantes para o negócio.
 2. Aprimorar e substituir os gráficos e/ou tabelas existentes para melhor visualização.
 3. Criar novos filtros.
